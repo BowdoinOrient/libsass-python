@@ -99,7 +99,7 @@ else:
         ])
         if tuple(map(int, platform.mac_ver()[0].split('.'))) >= (10, 9):
             flags.append(
-                '-Wno-error=unused-command-line-argument-hard-error-in-future',
+                '-Wno-error=unused-command-line-argument',
             )
     link_flags = ['-fPIC', '-lstdc++']
 
